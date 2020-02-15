@@ -7,7 +7,7 @@ def call_repeatmasker(fasta, lib, engine = "ncbi", cores = 1, dir = "./"):
     #    -dir .
     #    dmel-all-chromosome-r6.22.fasta
     import subprocess
-    from checkers import check_installation
+    from rwt.checkers import check_installation
     if not (check_installation("RepeatMasker")):
         sys.exit()
 
