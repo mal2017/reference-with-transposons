@@ -1,0 +1,26 @@
+package:
+  name: rwt
+  version: {{ GIT_DESCRIBE_TAG }}
+
+source:
+  path: ../
+
+build:
+   number: {{ GIT_DESCRIBE_NUMBER }}
+   string: {{ GIT_BUILD_STR }}
+
+requirements:
+  host:
+    - python
+    - setuptools
+  run:
+    - python >=3.6
+    - repeatmasker
+test:
+  imports:
+    - rwt
+
+about:
+  home:
+  license: MIT
+  license_file: LICENSE
