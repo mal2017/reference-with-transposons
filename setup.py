@@ -4,11 +4,11 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="example-pkg-YOUR-USERNAME-HERE", # Replace with your own username
-    version="0.0.1",
+    name="rwt", # Replace with your own username
+    version="0.1.0",
     author="Matt Lawlor",
     author_email="matt.a.lawlor@gmail.com",
-    description="Repeat masks a genome and adds additional seqs",
+    description="utils for making custom references with additional consensus seqs",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/mal2017/reference-with-transposons",
@@ -16,7 +16,7 @@ setuptools.setup(
         entry_points = {
         'console_scripts': ['rwt=rwt.cli:main'],
     },
-    scripts=["scripts/format_repbase_fa.R"],
+    scripts=["scripts/format_repbase_fa.R","scripts/fa2gtf.R"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
