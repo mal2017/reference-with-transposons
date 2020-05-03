@@ -16,6 +16,11 @@ requirements:
   run:
     - python >=3.6
     - repeatmasker
+    - r-stringr
+    - r-magrittr
+    - bioconductor-rtracklayer
+    - r-readr
+    - r-dplyr
 test:
   imports:
     - rwt

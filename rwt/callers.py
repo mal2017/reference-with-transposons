@@ -20,3 +20,12 @@ def call_repeatmasker(fasta, lib, engine = "ncbi", cores = 1, dir = "./"):
         "-nolow",
         "-dir " + dir,
         fasta]))
+
+
+def call_repbase_fixer(ifa, ofa):
+    import subprocess
+    return(subprocess.run(["Rscript","--vanilla","scripts/format_repbase_fa.R",ifa,ofa]))
+
+def call_fa2gtf(ifai, ogtf):
+    import subprocess
+    return(subprocess.run(["Rscript","--vanilla", "scripts/fa2gtf.R", ifai, ogtf]))

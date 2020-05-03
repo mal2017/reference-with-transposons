@@ -16,6 +16,7 @@ setuptools.setup(
         entry_points = {
         'console_scripts': ['rwt=rwt.cli:main'],
     },
+    scripts=["scripts/format_repbase_fa.R"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
